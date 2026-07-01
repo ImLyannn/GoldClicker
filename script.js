@@ -1,8 +1,8 @@
-let gold = 8;
+let gold = 9;
     let clickValue = 1;
     let critrate = 5;
     let critdamage = 150;
-    let upgradePrice = 32;
+    let upgradePrice = 16;
     let cooldown = 2000; // ms
     const minCooldown = 200;
     const maxCritRate = 70;
@@ -10,7 +10,6 @@ let gold = 8;
     let cooldownPrice = 30;
     let duplicatePrice = 35;
     let autoClickerPrice = 500;
-
     let upgradeCritRateCost = 30;
     let upgradeCritDamageCost = 45;
 
