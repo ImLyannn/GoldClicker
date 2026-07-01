@@ -1,0 +1,40 @@
+body { font-family: Arial, sans-serif; text-align: center; background: #ffffff; }
+    #game { margin-top: 30px; display: flex; justify-content: center; gap: 50px; }
+
+    #autoButtonContainer ,#buttonContainer{
+      display: grid;
+      grid-template-columns: repeat(5, 80px);
+      grid-auto-rows: 80px;
+      grid-gap: 10px;
+      justify-content: center;
+      max-width: 400px;
+    }
+
+    .click-button {
+      width: 80px; height: 80px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; color: white; font-weight: bold;
+      border-radius: 10px; user-select: none;
+    }
+    #buttonContainer .click-button { background: rgb(255, 0, 0); }
+    #buttonContainer .click-button.disabled { cursor: not-allowed; background: rgb(75, 75, 75); }
+    #autoButtonContainer .click-button { background: rgb(12, 30, 134); }
+
+    .shop { margin-top: 20px; }
+    .shop button { margin: 5px; padding: 10px; cursor: pointer; }
+    #notif { margin-top: 15px; font-weight: bold; min-height: 20px; }
+
+    @media (max-width: 768px) {
+    #game {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+    #autoButtonContainer,
+    #buttonContainer {
+        max-width: 95%;
+        grid-template-columns: repeat(4, 1fr); }
+    .shop { width: 95%; }
+    .shop button { width: 100%; }
+}

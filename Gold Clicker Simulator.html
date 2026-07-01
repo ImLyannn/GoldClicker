@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gold Clicker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🪙Gold Clicker Simulator🪙👛</h1>
+  <p>Gold: <span id="gold">0</span></p>
+
+  <div id="game">
+    <div id="buttonContainer">
+      <div class="click-button" onclick="clickButton(this)">CLICK</div>
+    </div>
+    <div id="autoButtonContainer"></div>
+  </div>
+
+  <div class="shop">
+    <h2>Shop</h2>
+    <button onclick="upgradeClick()" id="clickUpBtn">Upgrade Click (32 Gold)</button>
+    <button onclick="duplicateButton()" id="dupBtn">Duplicate Button (35 Gold)</button>
+    <button onclick="upgradeCooldown()" id="cdBtn">Reduce Cooldown -0.05s (30 Gold)</button>
+    <button onclick="buyAutoClicker()" id="autoBtn">Buy Auto Clicker (500 Gold)</button>
+    <button onclick="upgradeCritRate()" id="crtBtn">Crit Rate +2% (30 Gold)</button>
+    <button onclick="upgradeCritDamage()" id="cdmBtn">Crit Damage +5% (45 Gold)</button>
+    <p>Crit Rate: <span id="critRate">5</span>% (max 70%)</p>
+    <p>Crit Damage: <span id="critDamage">150</span>% (max 250%)</p>
+  </div>
+
+  <div id="notif"></div>
+  <script src="script.js"></script>
+</body>
+</html>
