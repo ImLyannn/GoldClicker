@@ -1,8 +1,7 @@
-let gold = 999999999999999;
+let gold = 8;
     let clickValue = 1;
     let critrate = 5;
     let critdamage = 150;
-
     let upgradePrice = 32;
     let cooldown = 2000; // ms
     const minCooldown = 200;
